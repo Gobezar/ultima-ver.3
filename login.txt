@@ -1,0 +1,7 @@
+yandex.mail:
+login - ultimadetailing@yandex.ru
+pass - ultimA1748Sar
+
+https://my.easyweek.io:
+login - ultimadetailing@yandex.ru
+pass - UltimA7847Sar
