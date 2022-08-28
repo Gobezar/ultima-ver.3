@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>ULTIMA</title>
+</head>
+
+
+<body>
+
+    <div class="background_1">
+
+        <header>
+
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/footer_logo.png" class="img-fluid navbar_logo"
+                            alt="Логотип"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item_services">
+                                <a class="nav-link" href="#services">Наши услуги</a>
+                            </li>
+                            <li class="nav-item_price">
+                                <a class="nav-link" href="#price">Прайс-лист</a>
+                            </li>
+                            <li class="nav-item_contacts">
+                                <a class="nav-link" href="#contacts">Контакты</a>
+                            </li>
+                            <li class="nav-item_map">
+                                <a class="nav-link" href="#contacts">Как нас найти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="row header_text">
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                        <p class="header_text_p">Саратов</p>
+                        <h1 class="text_h1 header_text_h1">Ultima Detailing</h1>
+                        <h2 class="text_h2 header_text_h2">Профессионально приведём Ваш автомобиль<br> в порядок</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row header_buttons">
+                <div class="col-6 buttons_left">
+                    <a class="header_button_left booking btn" type="button">Онлайн-запись</a>
+                </div>
+                <div class="col-6 buttons_right">
+                    <a href="tel:+79873213504" class="header_button_right btn" type="button">Позвонить нам</a>
+                </div>
+            </div>
+            <div class="col-12 arrow_down">
+                <a href="#services" class="header_arrow_down" type="button"><img src="img/arrow_down.png"
+                        alt="Стрелка вниз" class="img-fluid"></a>
+
+
+            </div>
+
+        </header>
+
+        <h3 class="services_h3 text_h3">Наши услуги</h3>
+        <div class="rectangle_h3 rectangle_services_h3"></div>
+        <section class="services" id="services">
+            <div class="container">
+               
+                <div class="our_services">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_1.jpg" class="card-img-top" alt="Защитное покрытие">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Защитное покрытие</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p">Защитные покрытия предотвращают химическое и
+                                        механическое воздействие на автомобиль, поддерживают внешний вид.<span id="dots">...</span>
+                                        <span id="more">С автомобиля, на который нанесено защитное покрытие, быстрее сходит вода и
+                                        масла.
+                                        Керамическое покрытие добавляет прочность автомобилю.</span>
+                                        <button id="service_btn" onclick="readMore()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_2.jpg" class="card-img-top" alt="Детейлинг-химчистка">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Детейлинг-химчистка</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p">Аккуратный, ухоженный салон позволит всем,
+                                        находящимся в машине, почувствовать себя максимально комфортно<span id="dots2">...</span>
+                                        <span id="more2">и создаст самое благоприятное впечатление о самом автовладельце. Чтобы добиться наилучшего эффекта, рекомендуем воспользоваться
+                                        услугой по химчистке салона.</span>
+                                        <button id="service_btn2" onclick="readMore2()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_3.jpg" class="card-img-top" alt="Полировка кузова">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Полировка кузова</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p">Полировка защищает кузов автомобиля от коррозии,
+                                        агрессивного воздействия окружающей среды, а также восстанавливает<span id="dots3">...</span>
+                                        <span id="more3">салонный внешний вид. Для устранения изъянов предлагаем воспользоваться нашей услугой по детейлинг
+                                        полировке.</span>                                    
+                                    <button id="service_btn3" onclick="readMore3()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_4.jpg" class="card-img-top" alt="Тонировка стёкол">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Тонировка стёкол</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p">Тонировка автомобиля – это защита от вредного ультрафиолетового излучения, чрезмерного нагрева и<span id="dots4">...</span><span id="more4">ослепляющего света солнца и фар встречных
+                                        автомобилей. Кроме того, тонировка стекол автомобиля защищает Ваше личное пространство от
+                                        посторонних
+                                        взглядов.</span>
+                                        <button id="service_btn4" onclick="readMore4()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_5.jpg" class="card-img-top" alt="Оклеивание плёнкой">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Оклеивание плёнкой</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p"> Давно хотите освежить дизайн вашего
+                                        автомобиля? Вам поможет оклеивание виниловой плёнкой.<span id="dots5">...</span>
+                                        <span id="more5">Более ста разновидностей оттенков, включая матовые и глянцевые структуры.
+                                        Если Вы хотите защитить кузов Вашего авто — Вам подойдёт оклейка антигравийной
+                                        пленкой.</span>                                    
+                                    <button id="service_btn5" onclick="readMore5()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="gradient_img">
+                                    <img src="img/services_img_6.jpg" class="card-img-top" alt="Детейлинг-мойка">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text_h5 services_h5">Детейлинг-мойка</h5>
+                                    <div class="rectangle_services_h5"></div>
+                                    <p class="card-text text_p services_p">Если на кузове автомобиля появились серьёзные
+                                        загрязнения, которые вас
+                                        огорчают - значит<span id="dots6">...</span><span id="more6">пришло время посетить нашу детейлинг-мойку, включающую в себя
+                                        глубокую
+                                        и тщательную чистку автомобиля от загрязнений с применением специальной химии и
+                                        средств.</span>                                    
+                                    <button id="service_btn6" onclick="readMore6()">Подробнее</button></p>
+                                    <div class="flex_repair_img"><img class="services_repair_img img-fluid"
+                                            src="img/services_repair.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price" id="price">
+            <div class="container-fluid">
+                <h3 class="price_h3 text_h3">Прайс</h3>
+                <div class="rectangle_h3 rectangle_price_h3"></div>
+                <div class="row">
+                    <div class="col-12">
+
+                        <img src="img/price.png" alt="Прайс" class="price_img img-fluid">
+                        <!-- <div class="price_back_text"><p class="price_background_text">Price<br><span
+                                class="price_background_text_span">Price</span><br>Price</p> -->
+                    </div>
+
+                    <table class="table price_table">
+
+                        <tbody>
+                            <tr>
+                                <td class="td_service">Полировка фар</td>
+                                <td class="td_price">от 1 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Детейлинг-мойка</td>
+                                <td class="td_price">от 1 500 руб.</td>
+
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Тонировка</td>
+                                <td class="td_price">от 2 000 руб.</td>
+
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Нанесение воска</td>
+                                <td class="td_price">от 4 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Нанесение защитных покрытий</td>
+                                <td class="td_price">от 5 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Нанесение керамики</td>
+                                <td class="td_price">от 12 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Детейлинг-химчистка</td>
+                                <td class="td_price">от 12 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service">Полировка кузова</td>
+                                <td class="td_price">от 15 000 руб.</td>
+                            </tr>
+                            <tr>
+
+                                <td class="td_service td_service_lastchild">Полная оклейка кузова</td>
+                                <td class="td_price td_price_lastchild">от 150 000 руб.</td>
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--  </div>   background_1 close -->
+        <!-- <div class="background_2">  -->
+
+        <section class="benefits">
+            <h3 class="benefits_h3 text_h3">Преимущества</h3>
+            <div class="rectangle_h3 rectangle_benefits_h3"></div>
+            <div class="background_benefits">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-xs-12 benefits_item benefits_quality">
+                            <p class="benefits_background_text">01</p>
+                            <img src="img/benefits_quality.png" alt="Гарантия качества"
+                                class="benefits_img quality_img img-fluid">
+                            <h5 class="benefits_h5 benefits_quality_h5">Гарантия качества</h5>
+                            <p class="benefits_p benefits_quality_p text-p">Мы используем качественные материалы, ведь
+                                только с помощью них можно добиться идеального результата.</p>
+
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-xs-12 benefits_item benefits_qualification">
+                            <p class="benefits_background_text">02</p>
+                            <img src="img/benefits_qualification.png" alt="Высокая квалификация мастеров"
+                                class="benefits_img qualification_img img-fluid">
+
+                            <h5 class="benefits_h5 benefits_qualification_h5">Высокая квалификация мастеров</h5>
+                            <p class="benefits_p benefits_qualification_p text-p">В нашей команде работают исключительно
+                                опытные
+                                мастера, которые найдут индивидуальный подход к каждому клиенту.</p>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-xs-12 benefits_item benefits_spectrum">
+                            <p class="benefits_background_text">03</p>
+                            <img src="img/benefits_spectrum.png" alt="Широкий спектр услуг"
+                                class="benefits_img spectrum_img img-fluid">
+
+                            <h5 class="benefits_h5 benefits_spectrum_h5">Широкий спектр услуг</h5>
+                            <p class="benefits_p benefits_spectrum_p text-p">С помощью оборудования нового поколения мы
+                                оказываем множество услуг, соблюдая установленные сроки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <p class="works_background_text">Detailing</p>
+            <p class="works_background_text works_background_text_mobile">Auto</p>
+            <div class="container grid-container">
+                <p class="works_p text_p"><span class="works_p_span">Портфолио и примеры наших работ</span><br>
+                    - это лучшая гарантия результата и презентация нашего мастерства.</p>
+
+
+
+
+                <div id="carouselExampleControls" class="carousel slide carousel_slide_desktop" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="grid_items">
+                                <div class="grid_item item_1">
+                                    <p class="p_works_item_1"><span class="p_works_item_1_span">Bmw x5
+                                        </span><br>Оклейка виниловой
+                                        и <br> полиуретановой плёнкой</p>
+                                </div>
+                                <div class="grid_item item_2">
+                                    <p class="p_works_item_2"><span class="p_works_item_2_span">Bmw 330</span><br>
+                                        Детейлинг-мойка
+                                        <br> Глубокая полировка кузова <br>
+                                        Устранение сколов
+                                    </p>
+                                </div>
+                                <div class="grid_item item_3"></div>
+                                <div class="grid_item item_4"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="grid_items">
+                                <div class="grid_item item_5">
+                                    <p class="p_works_item_5"><span class="p_works_item_5_span">Mercedez Benz
+                                    </span><br><span class="p_works_item_5_span_2">Полировка кузова
+                                    <br> Антигравийная защита <br> Оклейка виниловой плёнкой <br> Покраска дисков и.т.д.</span></p>
+                                </div>
+                                <div class="grid_item item_6">
+                                    <p class="p_works_item_6"><span class="p_works_item_6_span">Bmw x5 f15
+                                    </span><br>Шумоизоляция арок
+                                        <br> Перешив водительского сидения <br> Покраска дисков в тёмный графит <br> Тонировка премиальной атермальной <br> плёнкой Llumar</p>
+                                </div>
+                
+                                <div class="grid_item item_7">
+
+                                </div>
+                                <div class="grid_item item_8">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- <div class="carousel-item">
+                            <div class="grid_item item_5">9</div>
+                            <div class="grid_item item_6">10</div>
+                            <div class="grid_item item_7">11</div>
+                            <div class="grid_item item_8">12</div>
+                          </div>
+                        </div>  -->
+
+
+                        <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Следующий</span>
+                        </button> -->
+                    </div>
+                </div>
+
+
+                <div id="carouselExampleControls" class="carousel slide carousel_slide_mobile" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="grid_item item_1">
+                                <p class="p_works_item_1"><span class="p_works_item_1_span">Bmw x5
+                                    </span><br>Оклейка виниловой
+                                    и <br> полиуретановой плёнкой</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="grid_item item_5">
+                                <p class="p_works_item_5"><span class="p_works_item_5_span">Mercedez Benz
+                                </span><br><span class="p_works_item_5_span_2">Полировка кузова
+                                <br> Антигравийная защита <br> Оклейка виниловой плёнкой <br> Покраска дисков и.т.д.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- <div class="carousel-item">
+                            <div class="grid_item item_11"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="grid_item item_12"></div>
+                        </div> -->
+
+    
+
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button> -->
+                </div>
+        </section>
+
+        <section class="questions">
+            <!-- <div class="background_questions"> -->
+            <div class="container-fluid questions_container_fluid">
+                <div class="row">
+                    <!-- <div class="col-12 questions_back">
+                        <img src="img/wheels.png" class="img-fluid questions_back_img" alt="">
+                    </div> -->
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <img src="img/wheels_2.png" class="img-fluid questions_wheels_img" alt="Колеса">
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <h3 class="questions_h3">Остались вопросы?</h3>
+                        <p class="questions_p_form">Заполните форму и мы Вам перезвоним.</p>
+                        <p class="questions_p_name">Введите Ваше имя:</p>
+                        <div class="input_questions">
+                            <form id="data"><input type="text" name="name" placeholder=""></form>
+                            <!-- <form action="" method="post"><input type="text" name="name" placeholder=""></form> -->
+                        </div>
+                        
+                        <div class="button_questions">
+                            <button class="questions_button btn" type="submit" form="data">Оставить заявку</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <img src="img/Phone.png" alt="Колеса" class="questions_img img-fluid">
+                        <p class="questions_p_number">Введите Ваш номер телефона:</p>
+                        <div class="input_questions">
+                            <form id="data"><input type="text" name="phone" placeholder="">
+                                <!-- <form action="" method="post"><input type="text" name="phone" placeholder=""> -->
+                            </form>
+                        </div>
+                        <div class="button_questions">
+                            <a class="questions_button btn booking" type="button">Записаться онлайн</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+            <div class="questions_mobile">
+                <div class="container-fluid">
+                    <div class="row row-questions_mobile">
+                        <div class="col-sm-3 col-2 p-0"></div>
+                        <div class="col-sm-4 col-6 questions_mobile_left p-0">
+                            <h3 class="questions_h3">Остались вопросы? </h3>
+                            <p class="questions_p_form">Заполните форму и мы Вам перезвоним.</p>
+                            <p class="questions_p_name">Введите Ваше имя:</p>
+                            <div class="input_questions input_questions_name">
+                                <form action="" method="post"><input type="text" name="name" placeholder=""></form>
+                            </div>
+                            <p class="questions_p_number">Введите Ваш номер телефона:</p>
+                            <div class="input_questions input_questions_number">
+                                <form action="" method="post">
+                                    <input type="text" name="phone" placeholder="">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-3 p-0">
+                            <img src="img/Phone.png" alt="Колеса" class="questions_img img-fluid">
+                        </div>
+                        <div class="col-sm-2 col-1 p-0"></div>
+                        <!-- <div class="col-sm-1 col-1"></div> -->
+                    </div>
+                    <div class="row row-questions_mobile_2">
+                        <div class="col-sm-2 col-2"></div>
+                        <div class="questions-mobile-col-sm-4 col-sm-4 col-4">
+                            <div class="button_questions questions_button-left">
+                                <a class="questions_button btn" type="button">Оставить заявку</a>
+                            </div>
+                        </div>
+                        <div class="questions-mobile-col-sm-4 col-sm-4 col-4">
+                            <div class="button_questions questions_button-right">
+                                <a class="questions_button btn booking" type="button">Записаться онлайн</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container-fluid contacts_desctop">
+                <div class="row">
+                    <div class="col-xl-2 col-md-1 contacts_left"></div>
+                    <div class="col-xl-4 col-md-5 contacts_left">
+                        <h3 class="text_h3 contacts_h3 contacts_h3_left">Наши контакты</h3>
+                        <div class="rectangle_contacts_h3 rectangle_contacts_h3_left"></div>
+                        <p class="text_p contacts_p contacts_p_number">Телефон<br><span
+                                class="contacts_p_span">+7 (8452) 422-777</span></p>
+                        <p class="text_p contacts_p contacts_p_email">E-mail<br><span
+                                class="contacts_p_span">ultimadetailing@yandex.ru</span></p>
+
+                        <p class="text_p contacts_p">Пн-Вс: 10:00 — 19:00</p>
+                        <p class="text_p contacts_p">г. Саратов, Усть-Курдюмская 37.</p>
+                    </div>
+                    <div class="col-xl-6 col-md-6 contacts_left">
+                        <h3 class="text_h3 contacts_h3">Как нас найти</h3>
+                        <div class="rectangle_contacts_h3 rectangle_contacts_h3_right"></div>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1de9d1198eef7167b929694f62fe66bab6bd026221b0d8c5e1b5098a688c3b0&amp;source=constructor"
+                            width="938" height="587" frameborder="0" class="contacts_map"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid contacts_mobile">
+                <div class="row">
+                    <div class="col-sm-1 col-1"></div>
+                    <div class="col-sm-5 col-5">
+                        <h3 class="text_h3 contacts_h3 contacts_h3_left">Наши контакты</h3>
+                        <div class="rectangle_contacts_h3 rectangle_contacts_h3_left"></div>
+                    </div>
+                    <div class="col-sm-5 col-5">
+                        <div class="col-sm-1 col-1"></div>
+                        <h3 class="text_h3 contacts_h3">Как нас найти</h3>
+                        <div class="rectangle_contacts_h3 rectangle_contacts_h3_right"></div>
+                    </div>
+                    <div class="row row-two">
+                        <div class="col-sm-1 col-2 p-0"></div>
+                        <div class="contacts-col-sm-4 col-3 ">
+                            <p class="text_p contacts_p contacts_p_number">Телефон<br><span
+                                    class="contacts_p_span">+79876543210</span></p>
+                            <p class="text_p contacts_p contacts_p_email">E-mail<br><span
+                                    class="contacts_p_span">ultimadetailing@yandex.ru</span></p>
+                        </div>
+                        <div class="col-sm-1 col-1 p-0"></div>
+                        <div class="col-sm-1 col-1 p-0"></div>
+                        <div class="contacts-col-sm-5 col-5">
+                            <p class="text_p contacts_p contacts_p_addres">г. Саратов, <br> Усть-Курдюмская 37.</p>
+                            <p class="text_p contacts_p">Пн-Вс: 10:00 — 19:00</p>
+                        </div>
+                        <!-- <div class="col-sm-1 col-1"></div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1de9d1198eef7167b929694f62fe66bab6bd026221b0d8c5e1b5098a688c3b0&amp;source=constructor"
+                                width="938" height="587" frameborder="0" class="contacts_map"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row footer_row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-1 order-lg-1 footer_col_logo">
+                        <img src="img/footer_logo.png" alt="Логотип" class="img-fluid footer_logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-3 order-lg-2 footer_col_p_1">
+                        <p class="footer_p footer_p_1">© Все права защищены — 2022<br>ИНН 123456789012</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-4 order-lg-3 footer_col_p_2">
+                        <a class="footer_p footer_p_2" href="https://vk.com/public215610995"><span>Дизайн и верстка сайта: </span><br>VK
+                            ST<span>UDIO</span></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-2 order-lg-4 footer_icons">
+                        <div class="footer_icon_item">
+                            <a class="footer_p footer_p_icon_item" href="https://vk.com/ultima64"><img src="img/icon_vk.png" alt="ВК"
+                                    class="img-fluid footer_icon">Вконтакте
+                            </a>
+                        </div>
+                        <div class="footer_icon_item">
+                            <a class="footer_p footer_p_icon_item" href="https://www.instagram.com/ultima_detailing"><img src="img/icon_inst.png" alt="Инст"
+                                    class="img-fluid footer_icon">Instagram
+                            </a>
+                        </div>
+                        <div class="footer_icon_item">
+                            <a class="footer_p footer_p_icon_item" href="https://t.me/ultimadetailing"><img src="img/icon_tg.png" alt="Тг"
+                                    class="img-fluid footer_icon">Telegram
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+    </div> <!--  background_1 close -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- EasyWeek Appointment Widget: https://easyweek.ru/ -->
+    <script src="https://widget.easyweek.io/widget.js"></script>
+    <script>var ewWidget = new EasyWeekWidget({ url: 'https://widget.easyweek.io/ultima-detailing', trigger: ".booking" })</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="js/form.js"></script> 
+</body>
+
+</html>
