@@ -89,6 +89,9 @@
         width: 150px !important;
         height: 20px !important;
     }
+    .contacts_p_number {
+        width: 113px;
+    }
 }
 
 @media (max-width: 576px) {

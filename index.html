@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+<!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+             m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104143106', 'ym');
+
+        ym(104143106, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/104143106" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
@@ -64,10 +79,10 @@
 
             <div class="row header_buttons">
                 <div class="col-6 buttons_left">
-                    <a class="header_button_left booking btn" type="button">Онлайн-запись</a>
+                    <a class="header_button_left booking btn" type="button" href="https://t.me/ultimadetailing">Онлайн-запись</a>
                 </div>
                 <div class="col-6 buttons_right">
-                    <a href="tel:+79873213504" class="header_button_right btn" type="button">Позвонить нам</a>
+                    <a href="tel:+79027172777" class="header_button_right btn" type="button">Позвонить нам</a>
                 </div>
             </div>
             <div class="col-12 arrow_down">
@@ -441,24 +456,24 @@
                         <p class="questions_p_form">Заполните форму и мы Вам перезвоним.</p>
                         <p class="questions_p_name">Введите Ваше имя:</p>
                         <div class="input_questions">
-                            <form id="data"><input type="text" name="name" placeholder=""></form>
+                            <form id="data"><input type="text" name="name" placeholder="Временно недоступно" maxlength="15" disabled></form>
                             <!-- <form action="" method="post"><input type="text" name="name" placeholder=""></form> -->
                         </div>
                         
                         <div class="button_questions">
-                            <button class="questions_button btn" type="submit" form="data">Оставить заявку</button>
+                            <button class="questions_button btn" type="submit" form="data" disabled>Оставить заявку</button>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 col-sm-12">
                         <img src="img/Phone.png" alt="Колеса" class="questions_img img-fluid">
                         <p class="questions_p_number">Введите Ваш номер телефона:</p>
                         <div class="input_questions">
-                            <form id="data"><input type="text" name="phone" placeholder="">
+                            <form id="data"><input type="text" name="phone" placeholder="Временно недоступно" maxlength="15" disabled>
                                 <!-- <form action="" method="post"><input type="text" name="phone" placeholder=""> -->
                             </form>
                         </div>
                         <div class="button_questions">
-                            <a class="questions_button btn booking" type="button">Записаться онлайн</a>
+                            <a class="questions_button btn booking" type="button" href="https://t.me/ultimadetailing">Записаться онлайн</a>
                         </div>
                     </div>
                 </div>
@@ -475,12 +490,12 @@
                             <p class="questions_p_form">Заполните форму и мы Вам перезвоним.</p>
                             <p class="questions_p_name">Введите Ваше имя:</p>
                             <div class="input_questions input_questions_name">
-                                <form action="" method="post"><input type="text" name="name" placeholder=""></form>
+                                <form action="" method="post"><input type="text" name="name" placeholder="Временно недоступно" maxlength="15" disabled ></form>
                             </div>
                             <p class="questions_p_number">Введите Ваш номер телефона:</p>
                             <div class="input_questions input_questions_number">
                                 <form action="" method="post">
-                                    <input type="text" name="phone" placeholder="">
+                                    <input type="text" name="phone" placeholder="Временно недоступно" maxlength="15" disabled>
                                 </form>
                             </div>
                         </div>
@@ -494,12 +509,12 @@
                         <div class="col-sm-2 col-2"></div>
                         <div class="questions-mobile-col-sm-4 col-sm-4 col-4">
                             <div class="button_questions questions_button-left">
-                                <a class="questions_button btn" type="button">Оставить заявку</a>
+                                <button class="questions_button btn" type="submit" form="data" disabled>Оставить заявку</button>
                             </div>
                         </div>
                         <div class="questions-mobile-col-sm-4 col-sm-4 col-4">
                             <div class="button_questions questions_button-right">
-                                <a class="questions_button btn booking" type="button">Записаться онлайн</a>
+                                <a class="questions_button btn booking" type="button" href="https://t.me/ultimadetailing">Записаться онлайн</a>
                             </div>
                         </div>
                         <div class="col-sm-2 col-2"></div>
@@ -516,12 +531,12 @@
                         <h3 class="text_h3 contacts_h3 contacts_h3_left">Наши контакты</h3>
                         <div class="rectangle_contacts_h3 rectangle_contacts_h3_left"></div>
                         <p class="text_p contacts_p contacts_p_number">Телефон<br><span
-                                class="contacts_p_span">+7 (8452) 422-777</span></p>
-                        <p class="text_p contacts_p contacts_p_email">E-mail<br><span
-                                class="contacts_p_span">ultimadetailing@yandex.ru</span></p>
+                                class="contacts_p_span">+7 (902)-717-27-77</span></p>
+                        <!-- <p class="text_p contacts_p contacts_p_email">E-mail<br><span
+                                class="contacts_p_span">ultimadetailing@yandex.ru</span></p> -->
 
                         <p class="text_p contacts_p">Пн-Вс: 10:00 — 19:00</p>
-                        <p class="text_p contacts_p">г. Саратов, Усть-Курдюмская 37.</p>
+                        <p class="text_p contacts_p">г. Саратов, ул. Танкистов 84а</p>
                     </div>
                     <div class="col-xl-6 col-md-6 contacts_left">
                         <h3 class="text_h3 contacts_h3">Как нас найти</h3>
@@ -549,14 +564,14 @@
                         <div class="col-sm-1 col-2 p-0"></div>
                         <div class="contacts-col-sm-4 col-3 ">
                             <p class="text_p contacts_p contacts_p_number">Телефон<br><span
-                                    class="contacts_p_span">+7(8452) 422-777</span></p>
-                            <p class="text_p contacts_p contacts_p_email">E-mail<br><span
-                                    class="contacts_p_span">ultimadetailing@yandex.ru</span></p>
+                                    class="contacts_p_span">+7 (902)-717-27-77</span></p>
+                            <!-- <p class="text_p contacts_p contacts_p_email">E-mail<br><span
+                                    class="contacts_p_span">ultimadetailing@yandex.ru</span></p> -->
                         </div>
                         <div class="col-sm-1 col-1 p-0"></div>
                         <div class="col-sm-1 col-1 p-0"></div>
                         <div class="contacts-col-sm-5 col-5">
-                            <p class="text_p contacts_p contacts_p_addres">г. Саратов, <br> Усть-Курдюмская 37.</p>
+                            <p class="text_p contacts_p contacts_p_addres">г. Саратов, <br> ул. Танкистов 84а</p>
                             <p class="text_p contacts_p">Пн-Вс: 10:00 — 19:00</p>
                         </div>
                         <!-- <div class="col-sm-1 col-1"></div> -->
@@ -612,12 +627,12 @@
                         <p class="footer_p footer_p_1">© Все права защищены — 2022<br>ИНН 123456789012</p>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-4 order-lg-3 footer_col_p_2">
-                        <a class="footer_p footer_p_2" href="https://vk.com/public215610995"><span>Дизайн и верстка сайта: </span><br>VK
+                        <a class="footer_p footer_p_2" href="https://t.me/yes_kiselev"><span>Дизайн и верстка сайта: </span><br>VK
                             ST<span>UDIO</span></a>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-sm-2 order-lg-4 footer_icons">
                         <div class="footer_icon_item">
-                            <a class="footer_p footer_p_icon_item" href="https://vk.com/ultima64"><img src="img/icon_vk.png" alt="ВК"
+                            <a class="footer_p footer_p_icon_item" href="https://vk.com/ultima_detailing"><img src="img/icon_vk.png" alt="ВК"
                                     class="img-fluid footer_icon">Вконтакте
                             </a>
                         </div>
@@ -650,8 +665,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- EasyWeek Appointment Widget: https://easyweek.ru/ -->
-    <script src="https://widget.easyweek.io/widget.js"></script>
-    <script>var ewWidget = new EasyWeekWidget({ url: 'https://widget.easyweek.io/ultima-detailing', trigger: ".booking" })</script>
+    <!-- <script src="https://widget.easyweek.io/widget.js"></script> -->
+    <!-- <script>var ewWidget = new EasyWeekWidget({ url: 'https://widget.easyweek.io/ultima-detailing', trigger: ".booking" })</script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src="js/sweetalert.min.js"></script> 
     <script src="js/form.js"></script> 
